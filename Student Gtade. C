@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{
+    float n1, n2, n3, n4, n5, n6;
+    float total, percentage;
+    char again;
+    printf("Student Grade Calculator\n");
+
+    printf("Enter marks of Subject 1: ");
+    scanf("%f", &n1);
+
+    printf("Enter marks of Subject 2: ");
+    scanf("%f", &n2);
+
+    printf("Enter marks of Subject 3: ");
+    scanf("%f", &n3);
+
+    printf("Enter marks of Subject 4: ");
+    scanf("%f", &n4);
+
+    printf("Enter marks of Subject 5: ");
+    scanf("%f", &n5);
+
+    printf(" Enter marks of subject 6: ");
+    scanf("%f", &n6);
+
+    total = n1 + n2 + n3 + n4 + n5 + n6;
+    percentage = total / 6;
+
+    printf("\nTotal Marks: %.2f\n", total);
+    printf("Percentage: %.2f%%\n", percentage);
+
+    if (percentage >= 91) {
+        printf("Grade: A+\n");
+    }
+    else if (percentage >= 80) {
+        printf("Grade: A\n");
+    }
+    else if (percentage >= 70) {
+        printf("Grade: B\n");
+    }
+    else if (percentage >= 60) {
+        printf("Grade: C\n");
+    }
+    else if (percentage >= 33) {
+        printf("Grade: D\n");
+    }
+    else {
+        printf("Grade: F - Fail\n");
+    }
+
+    return 0;
+}
